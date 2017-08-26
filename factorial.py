@@ -2,7 +2,7 @@ fac_cache_r = {}
 fac_cache_i = {}
 
 
-def fac_r(n):
+def fac_r(n):  # recursive factorial
   if n == 0:
     return 1
   elif n == 1:
@@ -11,7 +11,7 @@ def fac_r(n):
     return n * fac_r(n - 1)
 
 
-def fac_i(n):
+def fac_i(n):  # iterative factorial
   length = len(fac_cache_i)
   fac_cache_i[0] = 1
   if n == 0:

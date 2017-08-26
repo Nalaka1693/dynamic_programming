@@ -2,7 +2,7 @@ fib_r_cache_i = {}
 fib_r_cache_r = {}
 
 
-def fib_r(n):
+def fib_r(n):  # recursive fibonacci
   if n == 1:
     return 0
   elif n == 2:
@@ -11,7 +11,7 @@ def fib_r(n):
     return fib_r(n - 1) + fib_r(n - 2)
 
 
-def fib_i(n):
+def fib_i(n):  # iterative fibonacci
   lenght = len(fib_r_cache_i)
   fib_r_cache_i[0] = 0
   fib_r_cache_i[1] = 1
